@@ -1,4 +1,9 @@
 # lab_documento
+
+Virtual mahcine prerequisite
+
+Ubuntu 22.0.4
+
 sudo apt update && apt upgrade
 
 sudo timedatectl set-timezone America/Chicago
@@ -23,7 +28,7 @@ sudo apt install nodejs -y
 node --version
 
 
-### PostrgeSQL Install
+### PostrgeSQL 14 Install
 
 sudo apt install postgresql postgresql-contrib
 
