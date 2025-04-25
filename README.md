@@ -67,3 +67,11 @@ NEXT_PRIVATE_SMTP_FROM_NAME="Documenso"
 NEXT_PRIVATE_SMTP_FROM_ADDRESS="noreply@documenso.com"
 
 npm i && npm run prisma:generate -w @documenso/prisma && npm run build -w @documenso/web
+
+### Notes 
+
+Clean NodeJS cache.
+
+```
+npm cache clean --force
+```
