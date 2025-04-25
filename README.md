@@ -80,6 +80,7 @@ npm run build
 ```
 npm run prisma:migrate-deploy
 ```
+### Command with error's 
 ```
 npm i && npm run prisma:generate -w @documenso/prisma && npm run build -w @documenso/web
 ```
