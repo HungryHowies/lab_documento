@@ -6,7 +6,7 @@ sudo timedatectl set-timezone America/Chicago
 sudo apt install net-tools plocate vim git
 
 
-### Install Node v22
+## Install Node v22
 
 sudo apt install -y ca-certificates curl gnupg
 
@@ -51,12 +51,11 @@ cp .env.example .env
 
 vi .env
 
-### Edit the file .env 
+## Edit the file .env 
 
 NEXTAUTH_SECRET="secret"
 
-NEXT_PUBLIC_WEBAPP_URL="http://192.168.0.206:3000"
-
+NEXT_PUBLIC_WEBAPP_URL="http://192.168.1.112:3000"
 
 NEXT_PRIVATE_DATABASE_URL="postgres://documenso:password@127.0.0.1:5432/documenso"
 
@@ -66,7 +65,24 @@ NEXT_PRIVATE_SMTP_FROM_NAME="Documenso"
 
 NEXT_PRIVATE_SMTP_FROM_ADDRESS="noreply@documenso.com"
 
+## Build
+```
+npm i
+```
+### This doesn work, error's out.
+```
+npm run build:web
+```
+### Option
+```
+npm run build
+```
+```
+npm run prisma:migrate-deploy
+```
+```
 npm i && npm run prisma:generate -w @documenso/prisma && npm run build -w @documenso/web
+```
 
 ### Notes 
 
