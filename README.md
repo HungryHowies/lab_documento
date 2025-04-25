@@ -1,6 +1,6 @@
 # lab_documento
 
-Virtual mahcine prerequisite
+VM prerequisite
 
 Ubuntu 22.0.4
 
