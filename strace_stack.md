@@ -5,6 +5,7 @@ npm i
 ```
 npm run build
 ```
+```
 0 verbose cli /usr/bin/node /usr/bin/npm
 1 info using npm@11.3.0
 2 info using node@v22.15.0
@@ -45,13 +46,13 @@ npm run build
 28 verbose npm  v11.3.0
 29 verbose exit 1
 30 verbose code 1
-
+```
 ### Execute
 
 ```
 npm run prisma:migrate-deploy
 ```
-
+```
 npm warn Unknown env config "auto-install-peers". This will stop working in the next major version of npm.
 @documenso/remix:start: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm.
 @documenso/remix:start:
@@ -102,3 +103,4 @@ Cached:    1 cached, 5 total
 Failed:    @documenso/remix#start
 
  ERROR  run failed: command  exited (1)
+```
