@@ -53,6 +53,8 @@ vi .env
 
 ## Edit the file .env 
 
+NOTE: I removed "0" from port number so defualt Postgress is used.
+
 NEXTAUTH_SECRET="secret"
 
 NEXT_PUBLIC_WEBAPP_URL="http://192.168.1.112:3000"
