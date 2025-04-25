@@ -65,3 +65,5 @@ NEXT_PRIVATE_DIRECT_DATABASE_URL="postgres://documenso:password@127.0.0.1:5432/d
 NEXT_PRIVATE_SMTP_FROM_NAME="Documenso"
 
 NEXT_PRIVATE_SMTP_FROM_ADDRESS="noreply@documenso.com"
+
+npm i && npm run prisma:generate -w @documenso/prisma && npm run build -w @documenso/web
