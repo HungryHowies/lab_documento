@@ -1,6 +1,8 @@
 # lab_documento
 
-VM prerequisite
+## VM prerequisite
+
+4 CPU, 4 GB RAM and 80 GB Drive.
 
 Ubuntu 22.0.4
 
@@ -46,9 +48,13 @@ ALTER USER documenso PASSWORD 'password';
 
 mkdir /tmp/documenso
 
-cd /tmp/documenso 
+cd /var/www/
 
-git clone https://github.com/documenso/documenso.git
+wget https://github.com/documenso/documenso/archive/refs/tags/v1.9.0.tar.gz
+
+sudo tar -xvf v1.9.0.tar.gz
+
+cp -r documenso-1.9.0 documenso
 
 cd documenso
 
@@ -58,7 +64,9 @@ vi .env
 
 ## Edit the file .env 
 
-NOTE: I removed "0" from port number so defualt Postgress is used.
+NOTE: I removed "0" from port number so default Postgress is used. The correct configurations are shown below. My Need to adjust the IP Address used.
+
+NEXTAUTH_URL="http://192.168.0.206:3000"
 
 NEXTAUTH_SECRET="secret"
 
@@ -68,29 +76,37 @@ NEXT_PRIVATE_DATABASE_URL="postgres://documenso:password@127.0.0.1:5432/documens
 
 NEXT_PRIVATE_DIRECT_DATABASE_URL="postgres://documenso:password@127.0.0.1:5432/documenso"
 
+NEXT_PRIVATE_SMTP_PORT=25
+
+Commented out the following line for testing purposes 
+```
+#NEXT_PRIVATE_SMTP_USERNAME="root"
+```
+
+# OPTIONAL: Defines the password to use with the SMTP server.
+
+```
+#NEXT_PRIVATE_SMTP_PASSWORD="password"
+```
 NEXT_PRIVATE_SMTP_FROM_NAME="Documenso"
 
 NEXT_PRIVATE_SMTP_FROM_ADDRESS="noreply@documenso.com"
 
 ## Build
+Navigate to directory
+```
+/var/www/documenso
+```
 ```
 npm i
 ```
-### This doesn work, error's out.
-```
-npm run build:web
-```
-### Option
 ```
 npm run build
 ```
 ```
 npm run prisma:migrate-deploy
 ```
-### Command with error's 
-```
-npm i && npm run prisma:generate -w @documenso/prisma && npm run build -w @documenso/web
-```
+
 
 ### Notes 
 
