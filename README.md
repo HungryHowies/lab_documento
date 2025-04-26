@@ -103,3 +103,7 @@ javascript heap out of memory
 ```
 export NODE_OPTIONS=--max_old_space_size=4096
 ```
+Update trubo
+```
+npx @turbo/codemod update
+```
