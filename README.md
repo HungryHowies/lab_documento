@@ -8,7 +8,7 @@ sudo apt update && apt upgrade
 
 sudo timedatectl set-timezone America/Chicago
 
-sudo apt install net-tools plocate vim git
+sudo apt install net-tools plocate vim git sendmail
 
 
 ## Install Node v22
