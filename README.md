@@ -104,7 +104,13 @@ npm run build
 ```
 npm run prisma:migrate-deploy
 ```
-
+Start Application
+```
+cd apps/web
+```
+```
+npm run start
+```
 
 ### Notes 
 
