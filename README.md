@@ -64,7 +64,7 @@ vi .env
 
 NOTE: I removed "0" from port number so default Postgress is used. The correct configurations are shown below. My Need to adjust the IP Address used.
 
-NEXTAUTH_URL="http://192.168.0.206:3000"
+NEXTAUTH_URL="http://192.168.1.112:3000"
 
 NEXTAUTH_SECRET="secret"
 
