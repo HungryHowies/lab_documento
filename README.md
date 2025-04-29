@@ -81,7 +81,7 @@ Commented out the following line for testing purposes
 #NEXT_PRIVATE_SMTP_USERNAME="root"
 ```
 
-# OPTIONAL: Defines the password to use with the SMTP server.
+### OPTIONAL: Defines the password to use with the SMTP server.
 
 ```
 #NEXT_PRIVATE_SMTP_PASSWORD="password"
