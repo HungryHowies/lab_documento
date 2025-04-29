@@ -46,7 +46,7 @@ ALTER USER documenso PASSWORD 'password';
 
 \q
 
-cd /var/www/
+cd /tmp/
 
 wget https://github.com/documenso/documenso/archive/refs/tags/v1.9.0.tar.gz
 
