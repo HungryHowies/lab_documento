@@ -1,4 +1,4 @@
-## Cretae certificates
+## Create certificates
 
 Created my own certificate using the file SIGNING.md
 ```
