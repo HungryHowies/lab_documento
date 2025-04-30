@@ -93,7 +93,7 @@ NEXT_PRIVATE_SMTP_FROM_ADDRESS="noreply@documenso.com"
 ## Build
 Navigate to directory
 ```
-/var/www/documenso
+/tmp/documenso
 ```
 ```
 npm i
