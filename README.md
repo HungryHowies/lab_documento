@@ -1,6 +1,6 @@
 # lab_documento
 
-The following documentation is using default settings for Self-Hosting on Ubuntu 22.0.4. Through trial and error this should  have Documenso-1.10_rc.5 working.  The difference between that I found from version 1.9.0 and 1.10_rc.5 is the build command  on the 1.9.0. version  makes directory  /web and the 1.10 does not. Th following steps will show this.
+The following documentation is using default settings for Self-Hosting on Ubuntu 22.0.4. Through trial and error this should  have Documenso-1.10_rc.5 working.  The difference between that I found from version 1.9.0 and 1.10_rc.5 is the build command  on the 1.9.0. version  makes directory  /web and the 1.10 does not. The following steps will show this.
 
 ## Virtual Machine prerequisite
 
@@ -62,6 +62,8 @@ ALTER USER documenso PASSWORD 'password';
 ```
 \q
 ```
+### Download Documenso 
+
 ```
 cd /tmp/
 ```
@@ -79,11 +81,9 @@ vi .env
 ```
 ## Edit the file .env 
 
-NOTE: I removed "0" from port number so default Postgress is used. The correct configurations are shown below. My Need to adjust the IP Address used.
+NOTE: I removed "0" from port number so default Postgress is used. The correct configurations are shown below. Adjust the IP Address.
 
 ```
-NEXTAUTH_URL="http://192.168.1.112:3000"
-
 NEXTAUTH_SECRET="secret"
 
 NEXT_PUBLIC_WEBAPP_URL="http://192.168.1.112:3000"
@@ -110,11 +110,19 @@ I used the default signing certificate for testing.
 Default signing certificate is located here
 
 ```
-cd /tmp/documenso/apps/remix/example
+cd /tmp/documenso/apps/remix/example/cert.p12
 ```
+Add this full path to the .env file. Leave NEXT_PRIVATE_SIGNING_PASSPHRASE blank.
+
+```
+# OPTIONAL: The local file path to the .p12 file to use for the local signing transport.
+NEXT_PRIVATE_SIGNING_LOCAL_FILE_PATH=/tmp/documenso/apps/remix/example/cert.p12
+```
+Leave NEXT_PRIVATE_SIGNING_PASSPHRASE setting blank.
+
 ## Javascript heap out of memory.
 
-I increase the heap to 4GB. This would depend on how much memory you have on the instance.
+I increase the heap to 4GB so there was no more issues during the building phase. This would depend on how much memory you have on the instance. 
 
 ```
 export NODE_OPTIONS=--max_old_space_size=4096
