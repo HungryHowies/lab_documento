@@ -1,6 +1,6 @@
 # lab_documento
 
-The following documentation is using default settings for Self-Hosting on Ubuntu 22.0.4. Through trial and error this should  have Documenso-1.10_rc.5 working.  The difference between that I found from version 1.9.0 and 1.10_rd.5 is the build command  on the 1.9.0. version  makes directory  /web and the 1.10 does not. Th following steps will show this.
+The following documentation is using default settings for Self-Hosting on Ubuntu 22.0.4. Through trial and error this should  have Documenso-1.10_rc.5 working.  The difference between that I found from version 1.9.0 and 1.10_rc.5 is the build command  on the 1.9.0. version  makes directory  /web and the 1.10 does not. Th following steps will show this.
 
 ## Virtual Machine prerequisite
 
