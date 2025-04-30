@@ -24,7 +24,12 @@ For the digital signature of your documents you need a signing certificate in .p
 
 5. Place the certificate `/apps/web/resources/certificate.p12` (If the path does not exist, it needs to be created)
 ```
+Create the directory called "resources".
 
+```
+mkdir resources
+```
+Copied  the certs made into the directory resources.
 
 ## Set the signing certificate in .env file
 
