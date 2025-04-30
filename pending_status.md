@@ -56,6 +56,24 @@ Execute run command
 ```
 npm run start
 ```
+```
+
+> @documenso/web@1.9.0 start
+> next start
+
+  ▲ Next.js 14.2.6
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1531ms
+*********************************************************************
+*
+*
+Please change the encryption key from the default value of "CAFEBABE"
+*
+*
+***********************************************************
+```
 Error
 ```
 [JOBS]: Job internal.seal-document failed p [BackgroundTaskExceededRetriesError]: Task exceeded retries
