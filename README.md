@@ -134,10 +134,13 @@ Default signing certificate is located here
 ```
 cd /tmp/documenso/apps/remix/example/cert.p12
 ```
+Edit .env file
+```
+vi /tmp/documenso/.env
+```
 Add this full path to the .env file. Leave NEXT_PRIVATE_SIGNING_PASSPHRASE blank.
 
 ```
-# OPTIONAL: The local file path to the .p12 file to use for the local signing transport.
 NEXT_PRIVATE_SIGNING_LOCAL_FILE_PATH=/tmp/documenso/apps/remix/example/cert.p12
 ```
 Leave NEXT_PRIVATE_SIGNING_PASSPHRASE setting blank.
