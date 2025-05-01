@@ -104,22 +104,6 @@ Commented out the following line for testing purposes.
 ```
 # NEXT_PRIVATE_SMTP_PASSWORD="password"
 ```
-## Signing certificate 
-
-I used the default signing certificate for testing. 
-Default signing certificate is located here
-
-```
-cd /tmp/documenso/apps/remix/example/cert.p12
-```
-Add this full path to the .env file. Leave NEXT_PRIVATE_SIGNING_PASSPHRASE blank.
-
-```
-# OPTIONAL: The local file path to the .p12 file to use for the local signing transport.
-NEXT_PRIVATE_SIGNING_LOCAL_FILE_PATH=/tmp/documenso/apps/remix/example/cert.p12
-```
-Leave NEXT_PRIVATE_SIGNING_PASSPHRASE setting blank.
-
 ## Javascript heap out of memory.
 
 I increase the heap to 4GB so there was no more issues during the building phase. This would depend on how much memory you have on the instance. 
@@ -142,6 +126,22 @@ npm run build
 ```
 npm run prisma:migrate-deploy
 ```
+## Signing certificate 
+
+I used the default signing certificate for testing. 
+Default signing certificate is located here
+
+```
+cd /tmp/documenso/apps/remix/example/cert.p12
+```
+Add this full path to the .env file. Leave NEXT_PRIVATE_SIGNING_PASSPHRASE blank.
+
+```
+# OPTIONAL: The local file path to the .p12 file to use for the local signing transport.
+NEXT_PRIVATE_SIGNING_LOCAL_FILE_PATH=/tmp/documenso/apps/remix/example/cert.p12
+```
+Leave NEXT_PRIVATE_SIGNING_PASSPHRASE setting blank.
+
 Navigate to directory
 ```
 cd /tmp/documenso/apps/remix
