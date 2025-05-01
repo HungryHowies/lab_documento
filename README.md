@@ -138,7 +138,7 @@ Edit .env file
 ```
 vi /tmp/documenso/.env
 ```
-Add this full path to the .env file. Leave NEXT_PRIVATE_SIGNING_PASSPHRASE blank.
+Add this full path to the .env file.
 
 ```
 NEXT_PRIVATE_SIGNING_LOCAL_FILE_PATH=/tmp/documenso/apps/remix/example/cert.p12
