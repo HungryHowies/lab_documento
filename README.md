@@ -62,6 +62,8 @@ ALTER USER documenso PASSWORD 'password';
 ```
 \q
 ```
+
+NOTE: Reminder this is in a /tmp directory and a reboot/restart may get deleted.
 ### Download Documenso 
 
 ```
